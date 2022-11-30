@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <title>Estudo Bootstrap</title>
+</head>
+<body>
+   <section>
+        <div class="container-fluid mt-3">
+
+            <div id="meuslide" class="carousel slide" data-bs-ride="carousel">
+
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#meuslide" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#meuslide" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#meuslide" data-bs-slide-to="2"></li>
+
+                </ol>
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="images/capa-face-creattech.jpg" alt="teste">
+                        <div class="carousel-caption">
+                            <h5>Meu Slide 01</h5>
+                            <p>Texto de Teste</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/capa-face-criatu.jpg" alt="teste">
+                        <div class="carousel-caption">
+                            <h5>Meu Slide 02</h5>
+                            <p>Texto de Teste</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/capa-face-pontovenditi.jpg" alt="teste">
+                        <div class="carousel-caption">
+                            <h5>Meu Slide 03</h5>
+                            <p>Texto de Teste</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <a class="carousel-control-prev" href="#meuslide" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#meuslide" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </a>
+            </div>
+        </div>
+   </section> 
+</body>
+</html>
