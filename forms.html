@@ -24,6 +24,7 @@
                             <div class="col-8">
                                 <input class="form-control" type="text" name="nome" required>
                                 <div class="valid-feedback">Correto!</div>
+                                <div class="invalid-feedback">Incorreto!</div>
                             </div>
                         </div>
 
@@ -235,6 +236,27 @@
 
         </div>
     </section>
+
+    <script type="text/javascript">
+        function validador() {
+            var nome = document.getElementsByTagName("nome")[0];
+            var email = document.getElementsByName("email")[0];
+
+            if (nome.value.length == "") {
+                nome.parentNode.classList.add('was-validated');
+                return false;
+            }
+            if (email.value.length < 3) {
+                email.parentNode.classList.add('was-valited');
+                return false;
+            }
+        };
+    </script>
+
+
+
+
+
 </body>
 
 </html>
