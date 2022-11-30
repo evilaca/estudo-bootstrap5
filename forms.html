@@ -13,13 +13,38 @@
 
 <body>
     <section>
+
         <div class="container">
+
             <div class="row justify-content-center mt-3">
+
                 <div class="col-6">
 
-                    <form class="needs-validation" name="" method="post" action="">
+                    <form class="needs-validation" name="formulario-teste" method="post" action="">
 
-                        <div class="row mt-1">
+                        <div class="row mt-3">
+							<label class="form-label col-12">Nome de usuário:</label>
+							<div class="input-group">
+								<span class="input-group-text">@</span>
+								<input class="form-control" type="text" name="usuario">
+							</div>
+						</div>
+						<div class="row mt-3">
+							<label class="form-label col-12">Link Personalizado:</label>
+							<div class="input-group">
+								<span class="input-group-text">http//exemplo.com/usuario/</span>
+								<input class="form-control" type="text" name="link">
+							</div>
+						</div>
+                        <div class="row mt-3">
+							<label class="form-label col-12">Preço do Produto:</label>
+							<div class="input-group">
+								<span class="input-group-text">R$ </span>
+								<input class="form-control" type="text" name="pp">
+							</div>
+						</div>
+
+                        <div class="row mt-3">
                             <label class="form-label col-4" for="">Nome: </label>
                             <div class="col-8">
                                 <input class="form-control" type="text" name="nome" required>
@@ -142,50 +167,16 @@
                             </div>
                         </div>
 
-                        <div class="row justify-content-center mt-5">
-                            <div class="col-12">
-                                <form class="needs-validation" name="fomul-teste" method="post" action="">
-                                    <label class="form-label col-12">Nome de usuário:</label>
-                                    <div class="input-group">
-                                        <span class="input-group-text">@</span>
-                                        <input class="form-control" type="text" name="usuario" required>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+                        
 
-                        <div class="row justify-content-center mt-3">
-                            <div class="col-12">
-                                <form class="needs-validation" name="fomul-teste" method="post" action="">
-                                    <label class="form-label col-12">Link Personalizado:</label>
-                                    <div class="input-group">
-                                        <span class="input-group-text">http://exemplo.com.br/usuario</span>
-                                        <input class="form-control" type="text" name="usuario">
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-
-                        <div class="row justify-content-center mt-3">
-                            <div class="col-12">
-                                <form class="needs-validation" name="fomul-teste" method="post" action="">
-                                    <label class="form-label col-12">Preço do Produto:</label>
-                                    <div class="input-group">
-                                        <span class="input-group-text">R$</span>
-                                        <input class="form-control" type="text" name="usuario">
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-
-                        <button type="submit" class="btn mt-3">Enviar</button>
+                        <button onclick="validador()" type="submit" class="btn mt-3">Enviar</button>
 
                     </form>
                 </div>
             </div>
 
 
-
+<!--
 
 
             <form class="mt-5" action="">
@@ -235,6 +226,10 @@
 
 
         </div>
+
+-->	
+
+
     </section>
 
     <script type="text/javascript">
