@@ -12,30 +12,35 @@
 </head>
 
 <body>
-   <section>
+    <section>
         <div class="container">
-            <div class="row justify-content-center mt-3" >
+            <div class="row justify-content-center mt-3">
                 <div class="col-6">
-                    <form name="form-teste" method="post" action="">
+
+                    <form class="needs-validation" name="" method="post" action="">
 
                         <div class="row mt-1">
                             <label class="form-label col-4" for="">Nome: </label>
                             <div class="col-8">
-                                <input class="form-control" type="text" name="nome">
+                                <input class="form-control" type="text" name="nome" required>
+                                <div class="valid-feedback">Correto!</div>
                             </div>
                         </div>
+
                         <div class="row mt-1">
                             <label class="form-label col-4" for="">E-mail: </label>
                             <div class="col-8">
-                                <input class="form-control" type="email" name="email">
+                                <input class="form-control" type="email" name="email" required>
                             </div>
                         </div>
+
                         <div class="row mt-1">
                             <label class="form-label col-4" for="">Envie seu Arquivo: </label>
                             <div class="col-8">
                                 <input class="form-control" type="file" name="file">
                             </div>
                         </div>
+
                         <div class="row mt-1">
                             <label class="form-label col-4" for="">Selecione a Cor: </label>
                             <div class="col-8">
@@ -46,7 +51,8 @@
                         <div class="row mt-1">
                             <label class="form-label col-4" for="">Encontre seu Curso: </label>
                             <div class="col-8">
-                                <input list="listaCursos" class="form-control" name="curso" placeholder="Escreva o nome do curso">
+                                <input list="listaCursos" class="form-control" name="curso"
+                                    placeholder="Escreva o nome do curso">
                                 <datalist id="listaCursos">
                                     <option value="HTML 5"></option>
                                     <option value="HTML Básico"></option>
@@ -86,7 +92,7 @@
                                     <input class="form-check-input" type="checkbox" name="" id="chec" checked>
                                     <label class="form-check-label" for="chec">Checked</label>
                                 </div>
-                                    
+
                             </div>
                         </div>
 
@@ -135,9 +141,43 @@
                             </div>
                         </div>
 
+                        <div class="row justify-content-center mt-5">
+                            <div class="col-12">
+                                <form class="needs-validation" name="fomul-teste" method="post" action="">
+                                    <label class="form-label col-12">Nome de usuário:</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">@</span>
+                                        <input class="form-control" type="text" name="usuario" required>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
 
+                        <div class="row justify-content-center mt-3">
+                            <div class="col-12">
+                                <form class="needs-validation" name="fomul-teste" method="post" action="">
+                                    <label class="form-label col-12">Link Personalizado:</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">http://exemplo.com.br/usuario</span>
+                                        <input class="form-control" type="text" name="usuario">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
 
+                        <div class="row justify-content-center mt-3">
+                            <div class="col-12">
+                                <form class="needs-validation" name="fomul-teste" method="post" action="">
+                                    <label class="form-label col-12">Preço do Produto:</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">R$</span>
+                                        <input class="form-control" type="text" name="usuario">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
 
+                        <button type="submit" class="btn mt-3">Enviar</button>
 
                     </form>
                 </div>
@@ -147,25 +187,29 @@
 
 
 
-            <form class="mt-3" action="">
+            <form class="mt-5" action="">
                 <div class="col-6">
                     <div>
                         <label class="form-label" for="nome">Seu Nome</label>
-                        <input class="form-control-plaintext" type="text" name="nome" value="Valentim" disabled id="nome">
+                        <input class="form-control-plaintext" type="text" name="nome" value="Valentim" disabled
+                            id="nome">
                     </div>
                     <div>
                         <label class="form-label" for="email">Seu E-mail</label>
-                        <input class="form-control form-control-lg" type="email" name="email" value="emersonvvilaca@gmail.com" readonly id="email">
+                        <input class="form-control form-control-lg" type="email" name="email"
+                            value="emersonvvilaca@gmail.com" readonly id="email">
                     </div>
                     <div>
                         <label class="form-label" for="email">Seu E-mail</label>
-                        <input class="form-control" type="email" name="email" value="emersonvvilaca@gmail.com" readonly id="email">
+                        <input class="form-control" type="email" name="email" value="emersonvvilaca@gmail.com" readonly
+                            id="email">
                     </div>
                     <div>
                         <label class="form-label" for="email">Seu E-mail</label>
-                        <input class="form-control form-control-sm" type="email" name="email" value="emersonvvilaca@gmail.com" readonly id="email">
+                        <input class="form-control form-control-sm" type="email" name="email"
+                            value="emersonvvilaca@gmail.com" readonly id="email">
                     </div>
-                    
+
                     <div>
                         <label class="form-label" for="msg">Sua Mensagem</label>
                         <textarea class="form-control" name="mensagem" id="msg"></textarea>
@@ -178,11 +222,11 @@
             <form action="" style="margin-top:50px">
                 <div class="row">
                     <div class="col">
-                        
+
                         <input class="form-control" type="text" name="nome" placeholder="Digite seu nome">
                     </div>
                     <div class="col">
-                        
+
                         <input class="form-control" type="email" name="email" placeholder="Digite seu e-mail">
                     </div>
                 </div>
@@ -190,7 +234,7 @@
 
 
         </div>
-   </section>
+    </section>
 </body>
 
 </html>
