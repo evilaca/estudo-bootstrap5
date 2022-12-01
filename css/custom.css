@@ -5,6 +5,7 @@
 
 .banner-topo {
     background-color: #ffcdc8;
+    padding-top: 20px;
 }
 
 .banner-topo .img-destaque {
@@ -25,6 +26,13 @@
 .quem-somos {
     background: #000;
     color: #fff;
+}
+
+.quem-somos .h1{
+    padding-top: 20px;
+}
+.quem-somos img {
+    padding-bottom: 20px;
 }
 
 .rodape {
