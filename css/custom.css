@@ -1,0 +1,40 @@
+.topo {
+    padding: 20px 0px;
+    position: relative;
+}
+
+.banner-topo {
+    background-color: #ffcdc8;
+}
+
+.banner-topo .img-destaque {
+    max-width: 400px;
+}
+
+.banner-topo h1 {
+    color: #846b7f;
+}
+.banner-topo h3 {
+    color: #ff6659;
+}
+
+.cor-tema {
+    color: #846b7f;
+}
+
+.quem-somos {
+    background: #000;
+    color: #fff;
+}
+
+.rodape {
+    color: #fff;
+    background-color: #000;
+}
+
+footer .assinatura{
+    color: rgb(211, 210, 210);
+    font-size: 10px;
+    font-style: italic;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
